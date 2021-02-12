@@ -16,13 +16,22 @@ namespace Csharp_Lab3_Var4_ConsoleApp
         {
             get =>  _terminals;
         }
+
+        internal Tanker Tanker
+        {
+            get => default(Tanker);
+            set
+            {
+            }
+        }
+
         public Port(string name, int terminalCount)
         {
             Name = name;
             TerminalCount = terminalCount;
             _terminals = new Tanker[TerminalCount];
         }
-        public Port MoorToTerminal(Tanker tanker)
+        public Port MoorToTerminal(Tanker tanker) // пришвартовать танкер к свободному терминалу
         {
             if (tanker != null)
             {
@@ -31,7 +40,7 @@ namespace Csharp_Lab3_Var4_ConsoleApp
                     if (_terminals[i] == tanker)
                         return this;
                 // ищем свободный терминал
-                Console.WriteLine($"! танкер \"{tanker.Name}\" запрашивает швартовку в порту \"{Name}\"");
+                Console.WriteLine($"! танкер {tanker.Name} запрашивает швартовку в порту \"{Name}\"");
                 for (int i = 0; i < TerminalCount; i++)
                 {
                     if (_terminals[i] == null)
@@ -48,7 +57,7 @@ namespace Csharp_Lab3_Var4_ConsoleApp
             }
             return null;
         }
-        public void ReleaseTerminal(Tanker tanker)
+        public void ReleaseTerminal(Tanker tanker) // освободить терминал
         {
             if (tanker != null)
             {
@@ -56,7 +65,7 @@ namespace Csharp_Lab3_Var4_ConsoleApp
                     if (_terminals[i] == tanker)
                     {
                         _terminals[i] = null;
-                        Console.WriteLine($"! танкер \"{tanker.Name}\" покинул терминал № {i + 1} порта \"{this.Name}\"");
+                        Console.WriteLine($"! танкер {tanker.Name} покинул терминал № {i + 1} порта \"{this.Name}\"");
                     }
                 tanker.LeavePort(this);
             }
@@ -70,7 +79,7 @@ namespace Csharp_Lab3_Var4_ConsoleApp
                 if (tanker == null)
                     str_terminals += "свободен \n";
                 else
-                    str_terminals += $"Занят танкером \"{tanker.Name}\" \n";
+                    str_terminals += $"Занят танкером {tanker.Name} \n";
                 i++;
                 }
             return $"***\nназвание порта: \"{Name}\", количество терминалов - {TerminalCount} \n" + str_terminals + "***";

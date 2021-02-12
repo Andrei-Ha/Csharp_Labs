@@ -15,6 +15,27 @@ namespace Csharp_Lab3_Var4_ConsoleApp
     class Cargo
     {
         public string Name { get; set; }
-        public float Density { get; set; }
+        public double Density { get; set; }
+        public TypeCargo Type { get; }
+
+        internal TypeCargo TypeCargo
+        {
+            get => default(TypeCargo);
+            set
+            {
+            }
+        }
+
+        public Cargo(string name, TypeCargo type) : this(name, 1, type) { }
+        public Cargo(string name, double density, TypeCargo type)
+        {
+            Name = name;
+            Density = density;
+            Type = type;
+        }
+        public void Info()
+        {
+            Console.WriteLine($" {Name} {Density} {Type}");
+        }
     }
 }
