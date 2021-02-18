@@ -17,14 +17,6 @@ namespace Csharp_Lab3_Var4_ConsoleApp
             get =>  _terminals;
         }
 
-        internal Tanker Tanker
-        {
-            get => default(Tanker);
-            set
-            {
-            }
-        }
-
         public Port(string name, int terminalCount)
         {
             Name = name;

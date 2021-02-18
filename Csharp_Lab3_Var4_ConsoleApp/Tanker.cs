@@ -22,31 +22,6 @@ namespace Csharp_Lab3_Var4_ConsoleApp
         public int DeadWeight { get; } // дедвейт 
         public TypeCargo TypeOfCargo { get; }
         public Cargo Cargo { get => _cargo; }
-
-        internal Tank Tank
-        {
-            get => default(Tank);
-            set
-            {
-            }
-        }
-
-        internal Cargo Cargo1
-        {
-            get => default(Cargo);
-            set
-            {
-            }
-        }
-
-        internal TypeCargo TypeCargo
-        {
-            get => default(TypeCargo);
-            set
-            {
-            }
-        }
-
         public Tanker() : this("NoName") { }
         public Tanker(string name) : this(name, 999) { }
         public Tanker(string name, int deadweight) : this(name, deadweight, TypeCargo.oil) { }
