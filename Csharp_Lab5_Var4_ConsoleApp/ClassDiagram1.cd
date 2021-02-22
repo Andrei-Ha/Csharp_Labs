@@ -3,7 +3,7 @@
   <Class Name="Csharp_Lab5_Var4_ConsoleApp.Printer">
     <Position X="4.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAIAAEQAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAIAAFQAA=</HashCode>
       <FileName>Printer.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -11,15 +11,15 @@
   <Class Name="Csharp_Lab5_Var4_ConsoleApp.Scanner">
     <Position X="8.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAQAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAIAABQAA=</HashCode>
       <FileName>Scanner.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Csharp_Lab5_Var4_ConsoleApp.Multifunction">
-    <Position X="4.25" Y="7.25" Width="1.5" />
+    <Position X="4.25" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>Multifunction.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="1.3" />
@@ -27,21 +27,21 @@
   <Interface Name="Csharp_Lab5_Var4_ConsoleApp.IPrinting">
     <Position X="4.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAEAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>IPrinting.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Csharp_Lab5_Var4_ConsoleApp.IScanning">
     <Position X="8.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IScanning.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="Csharp_Lab5_Var4_ConsoleApp.IDevice">
     <Position X="6.25" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAIAABQAA=</HashCode>
       <FileName>IDevice.cs</FileName>
     </TypeIdentifier>
   </Interface>

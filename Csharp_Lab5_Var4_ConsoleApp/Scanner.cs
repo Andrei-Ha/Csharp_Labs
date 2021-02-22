@@ -17,13 +17,12 @@ namespace Csharp_Lab5_Var4_ConsoleApp
         public void Scan(string str)
         {
             Console.WriteLine($"сканер {Name} получил команду на сканирование.");
-            Buffer = "(отсканировано сканером)" + str;
-            Message();
+            Buffer = str;
         }
         public void Message()
         {
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("страница успешно отсканирована!\n");
+            Console.WriteLine("Message:страница успешно отсканирована!\n");
             Console.ForegroundColor = ConsoleColor.White;
         }
     }

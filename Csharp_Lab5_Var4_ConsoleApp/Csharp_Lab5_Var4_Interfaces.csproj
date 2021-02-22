@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comparers.cs" />
     <Compile Include="IDevice.cs" />
     <Compile Include="IPrinting.cs" />
     <Compile Include="IScanning.cs" />
