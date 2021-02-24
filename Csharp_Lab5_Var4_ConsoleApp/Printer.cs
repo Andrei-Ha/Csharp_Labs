@@ -35,6 +35,14 @@ namespace Csharp_Lab5_Var4_ConsoleApp
         {
             return this.Name.CompareTo(((Printer)o).Name);
         }
+        public override bool Equals(object obj) // перегружаем для использования в лабе №6
+        {
+            return (this.Name == ((obj as Printer)?.Name ?? "")); 
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
         public void Info()
         {
             Console.WriteLine($"Название: {Name}; содержимое буфера:{Buffer}");
