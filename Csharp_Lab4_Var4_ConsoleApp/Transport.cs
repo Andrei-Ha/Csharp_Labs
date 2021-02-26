@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Csharp_Lab4_Var4_ConsoleApp
 {
+    [Serializable]
     public abstract class Transport
     {
         private int _maxSpeed; // скорость

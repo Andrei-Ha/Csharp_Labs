@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Csharp_Lab4_Var4_ConsoleApp
 {
+    [Serializable]
     abstract public class Land : Transport
     {
         public string EngineType { get; set; }
