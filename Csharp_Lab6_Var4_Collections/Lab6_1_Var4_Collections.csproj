@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Csharp_Lab5_Var4_ConsoleApp\Csharp_Lab5_Var4_Interfaces.csproj">
+    <ProjectReference Include="..\Csharp_Lab5_Var4_ConsoleApp\Lab5_Var4_Interfaces.csproj">
       <Project>{25f6ea33-1a46-4fd4-a6da-d9dd9b2f7957}</Project>
-      <Name>Csharp_Lab5_Var4_Interfaces</Name>
+      <Name>Lab5_Var4_Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
