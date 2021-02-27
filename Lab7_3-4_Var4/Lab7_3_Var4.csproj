@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{228792C7-75D9-4041-AB9A-721B326E9446}</ProjectGuid>
+    <ProjectGuid>{E467B8C1-6647-4027-8A70-4815AC52F816}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lab7_2_Var4</RootNamespace>
-    <AssemblyName>Lab7_2_Var4</AssemblyName>
+    <RootNamespace>Lab7_3_Var4</RootNamespace>
+    <AssemblyName>Lab7_3Var4</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tbus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Csharp_Lab4_Var4_ConsoleApp\Lab4_Var4_Inheritance.csproj">
-      <Project>{07ccd0e2-da2a-4d2a-90ff-dc7f3469e7ae}</Project>
-      <Name>Lab4_Var4_Inheritance</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

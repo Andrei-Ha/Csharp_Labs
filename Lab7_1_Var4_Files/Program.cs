@@ -189,7 +189,7 @@ namespace Lab7_1_Var4_Files
         }
         static void Main()
         {
-            DirectoryInfo dir = new DirectoryInfo(@"D:\!!!!!");         // текущий каталог
+            DirectoryInfo dir = new DirectoryInfo(@"D:\");         // текущий каталог
             try
             {
                 while (true)

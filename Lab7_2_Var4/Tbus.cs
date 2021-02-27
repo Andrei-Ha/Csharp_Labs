@@ -65,7 +65,6 @@ namespace Lab7_2_Var4
                 f.WriteLine(method);
             }
             f.Close();
-
         }
         // Добавьте экземплярный метод, который будет сохранять в бинарный файл всю информацию о текущем объекте. Имя файла – параметр метода.
         public void SaveObject(string filename)
@@ -77,7 +76,6 @@ namespace Lab7_2_Var4
             bw.Write(this.Seats);
             bw.Write(this.EngineType);
             fs.Close();
-
         }
         // Метод, который будет читать информацию из бинарного файла и возвращать готовый объект. Имя файла – параметр метода.
         public static Tbus LoadObject(string filename)
@@ -90,7 +88,6 @@ namespace Lab7_2_Var4
             string engineType = br.ReadString();
             fs.Close();
             return new Tbus(model, speed, seats, engineType);
-
         }
         // Добавьте методы, которые сериализуют и десериализуют объекты вашего класса. Имя файла – параметр метода.
         public void Serialize(string filename)
@@ -99,7 +96,6 @@ namespace Lab7_2_Var4
             BinaryFormatter fmt = new BinaryFormatter();
             fmt.Serialize(fs, this);
             fs.Close();
-
         }
         public static Tbus Deserialize(string filename)
         {
@@ -108,7 +104,6 @@ namespace Lab7_2_Var4
             Tbus tbus = (Tbus)fmt.Deserialize(fs);
             fs.Close();
             return tbus;
-
         }
 
     }
